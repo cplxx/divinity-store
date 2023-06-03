@@ -17,11 +17,11 @@
 }
 :root {
   --error-delay-animation: 700ms;
-  --body-background-color: #eff3f9;
+  --body-background-color: rgba(75, 0, 130);
 }
 body {
   font-family: poppins, sans-serif !important;
-  background: var(--body-background-color) !important;
+  background: #f1f1f1 !important;
 }
 html {
   scroll-behavior: smooth;
@@ -43,7 +43,7 @@ button {
 }
 .rm-navbar .rm-logo {
   position: absolute;
-  color: #fff !important;
+  color: rgba(75, 0, 130) !important;
   font-size: 24px;
   font-weight: 900;
   left: 8vw;
@@ -72,8 +72,8 @@ button {
   color: #f55 !important;
 }
 .rm-navbar .rm-items:hover {
-  transform: scale(1.1);
-  transition: 0.4s;
+  transform: scale(0.8);
+  transition: 0.2s;
 }
 .rm-navbar button {
   color: #f1f1f1;
@@ -85,24 +85,39 @@ button {
   height: 40px;
 }
 .btn {
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
+  padding: 1.4em 3em;
+  font-size: 14.5px;
+  /*text-transform: uppercase;*/
+  letter-spacing: 0.8px;
   font-weight: 500;
-  color: #fff;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
   border: none;
-  border-radius: 45px;
+  border-radius: 23px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
 }
 
+.btn.custom-btn {
+  color: #000000;
+  padding: 1em 2em; /* Tamanho personalizado */
+  font-size: 16px; /* Tamanho personalizado */
+  letter-spacing: 0.6px;
+  background: #ffffff;
+}
+
+.btn.custom-btn:hover {
+  background-color: rgba(75, 0, 130);
+  box-shadow: 0px 15px 20px #5a1480;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
 .btn:hover {
-  background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  background-color: rgba(75, 0, 130);
+  box-shadow: 0px 15px 20px #5a1480;
   color: #fff;
   transform: translateY(-7px);
 }
@@ -119,10 +134,10 @@ button {
   transform: translateY(-40%);
 }
 .green-btn {
-  background: #00c65a !important;
+  background: rgb(75, 0, 130);
 }
 .rm-header {
-  background: url(../imgs/backgroun_loja.webp) no-repeat;
+  background: url(../imgs/back3.png) no-repeat;
   background-size: 100%;
   height: 100vh;
   display: flex;
@@ -192,14 +207,14 @@ nav {
 }
 .btnComprar {
   color: #fff;
-  background-color: #00c65a;
+  background-color: rgb(75, 0, 130);
   padding: 10px 16px;
   border-radius: 12px;
   cursor: pointer;
 }
 .btnComprar:hover {
   background-color: #fff;
-  color: #00c65a;
+  color: rgba(75, 0, 130);
 }
 ul.categoria_produtos {
   list-style: none;
@@ -219,14 +234,14 @@ ul.categoria_produtos {
   text-transform: uppercase;
 }
 .categoria:hover {
-  background-color: #00c65a;
+  background-color: rgba(75, 0, 130);
   color: #fff;
 }
 .categoria:hover img {
   filter: invert(1);
 }
 .faq-section {
-  background: #eff3f9;
+  background: #f1f1f1;
   padding: 35px 0;
   margin-top: 80px;
 }
@@ -272,10 +287,10 @@ ul.categoria_produtos {
   transition: ease-in-out 300ms;
 }
 .faq-pergunta-aberto {
-  background-color: #00c65a !important;
+  background-color: rgb(75, 0, 130) !important;
 }
 .faq-pergunta-aberto > .faq-titulo h4 {
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -321,7 +336,6 @@ ul.categoria_produtos {
   transition: 0.3s ease-in-out;
 }
 
-
 .section-subtitle {
   color: #6f7a86;
   font-weight: 400;
@@ -347,12 +361,12 @@ ul.categoria_produtos {
 .rm-section .rm-cards:hover {
   cursor: default;
   box-shadow: 0 0.15rem 1.8rem 0 rgba(31, 45, 65, 0.15) !important;
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 .rm-section .rm-cards i {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  color: #00c65a;
+  color: rgb(12, 150, 0);
 }
 .rm-section .rm-cards p {
   color: #6f7a86;
@@ -400,7 +414,7 @@ ul.categoria_produtos {
   opacity: 0.9;
 }
 .rm-card ul li i {
-  color: #00c65a;
+  color: rgba(12, 150, 0);
   margin-right: 5px;
 }
 .rm-card h3 {
@@ -416,19 +430,14 @@ ul.categoria_produtos {
   transition: transform 1s ease;
 }
 
-.rm-card:hover {
-  transform: scale(1.2) translateZ(0);
-  transition: 1s;
-}
-
 .rm-card button {
   border: 0;
   cursor: pointer;
-  background: #b30000;
+  background: rgba(75, 0, 130);
   color: #fff;
-  padding: 10px 18px;
+  padding: 14px 22px;
   margin-bottom: 25px !important;
-  border-radius: 50px;
+  border-radius: 25px;
 }
 .rm-card button i {
   margin-right: 0.3rem;
@@ -447,7 +456,7 @@ ul.categoria_produtos {
   margin-top: 10px;
   width: 96px;
   height: 96px;
-  background: #00c65a;
+  background: rgba(75, 0, 130);
   box-shadow: 0 4px 9px 0 rgba(23, 28, 33, 0.06);
   transition: all ease 0.2s;
 }
@@ -523,7 +532,7 @@ iframe {
 .comprar .conteudo .preÃ§o {
   font-size: 24px;
   font-weight: 600;
-  color: #00c65a;
+  color: rgba(75, 0, 130);
 }
 .comprar .imagem {
   width: 30%;
@@ -543,7 +552,7 @@ iframe {
   justify-content: center;
   height: 64px;
   padding: 10px 16px;
-  background-color: #00c65a;
+  background-color: rgba(75, 0, 130);
   color: #fff;
   font-weight: 700;
   margin: 0 4px;
@@ -554,7 +563,7 @@ iframe {
 }
 .comprar .metodos .btnPagar:hover {
   background-color: #fff;
-  color: #00c65a;
+  color: rgba(75, 0, 130);
   border: 0.5px solid rgba(0, 0, 0, 0.336);
 }
 .fechar {
@@ -602,7 +611,7 @@ iframe {
 .seuminecraft .top {
   width: 100%;
   height: 45vh;
-  background-image: url(../img/1082090.html);
+  /* background-image: url(../imgs/32e84d89660315.617ac902914ed.png); */
   background-size: cover;
   background-position: center;
 }
@@ -611,6 +620,7 @@ iframe {
   margin-left: 15%;
   width: 50%;
 }
+
 .seuminecraft .conteudo .dolphin {
   transform: translateY(-64px);
 }
@@ -630,7 +640,7 @@ iframe {
   border-radius: 8px;
 }
 .seuminecraft .lista-item i {
-  color: #00c65a;
+  color: rgb(75, 0, 130);
 }
 .seuminecraft .imagens {
   width: 30%;
@@ -783,7 +793,7 @@ span#buy-window-price {
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #00c65a;
+  color: rgb(75, 0, 130);
 }
 ul#buy-window-payments-methods {
   display: flex;
@@ -800,7 +810,7 @@ ul#buy-window-payments-methods li {
   box-sizing: content-box;
   display: flex;
   padding: 20px;
-  background-color: #00c65a;
+  background-color: rgba(75, 0, 130);
   color: #fff;
   align-items: center;
   justify-content: center;
@@ -810,8 +820,8 @@ ul#buy-window-payments-methods li {
 }
 .payment-method:hover {
   background-color: #fff;
-  border: 1px #00c65a solid;
-  color: #00c65a;
+  border: 1px rgba(75, 0, 130) solid;
+  color: rgba(75, 0, 130);
 }
 .payment-method img {
   height: 32px;
@@ -893,9 +903,9 @@ button#buy-window-close {
     left: 5%;
   }
   .rm-header {
-    background: url(../imgs/backgroun_loja.webp) no-repeat;
+    background: url(../imgs/back3.png) no-repeat;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     position: relative !important;
     max-width: 100%;
     background-position: center;
@@ -938,7 +948,7 @@ button#buy-window-close {
     margin-top: 90px;
   }
   .produtos h2 {
-    color: #500e91;
+    color: rgba(75, 0, 130);
     font-size: 28px;
     font-weight: 500;
   }
@@ -948,8 +958,8 @@ button#buy-window-close {
     margin-top: 0;
   }
   .produtos .hr_title {
-    border-color: #500e91;
-    border: 1px solid #500e91;
+    border-color: rgba(75, 0, 130);
+    border: 1px solid rgba(75, 0, 130);
     width: 140px;
     border-radius: 1px;
     margin-bottom: 85px;
@@ -974,7 +984,7 @@ button#buy-window-close {
     margin: -110px auto;
   }
   .produtos .card_title {
-    color: #500e91;
+    color: rgba(75, 0, 130);
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -982,7 +992,7 @@ button#buy-window-close {
     margin-top: 20px;
   }
   .produtos .card_price h4 {
-    color: #500e91;
+    color: rgba(75, 0, 130);
     margin-top: 14px;
     font-size: 48px;
   }
@@ -997,7 +1007,7 @@ button#buy-window-close {
     margin-bottom: 15px;
   }
   .produtos .card_hr {
-    border: 1px solid #500e91;
+    border: 1px solid rgba(75, 0, 130);
     width: 104px;
     text-align: center;
     margin: 0 auto;
@@ -1019,7 +1029,7 @@ button#buy-window-close {
     border: none;
     padding: 10px 40px;
     color: #fff;
-    background: #622086;
+    background: rgba(75, 0, 130);
     border-radius: 5px;
     cursor: pointer;
     transition: all linear 0.2s;
@@ -1027,7 +1037,7 @@ button#buy-window-close {
   }
   .produtos .btn_comprar:hover {
     font-size: 18px;
-    border: 2px solid #500e91;
+    border: 2px solid rgba(75, 0, 130);
     border-radius: 4px;
     margin-top: 8px;
     text-decoration: none;
@@ -1041,8 +1051,8 @@ button#buy-window-close {
   }
   .produtos .selector {
     padding: 12px;
-    background: #500e91;
-    border: 2px solid #5a1480;
+    background: rgba(75, 0, 130);
+    border: 2px solid rgba(75, 0, 130);
     margin: 0 10px;
     border-radius: 4px;
     text-align: center;
@@ -1055,8 +1065,8 @@ button#buy-window-close {
   }
   .produtos .selector:hover {
     padding: 12px;
-    background: #500e91;
-    border: 2px solid #500e91;
+    background: rgba(75, 0, 130);
+    border: 2px solid rgba(75, 0, 130);
     margin: 0 10px;
     border-radius: 4px;
     text-align: center;
@@ -1082,7 +1092,7 @@ button#buy-window-close {
     height: 100vh;
     right: -100%;
     top: 0;
-    background-color: #00c65a;
+    background-color: rgba(75, 0, 130);
     transition: 0.3s all;
     margin-top: 0;
     display: flex;
@@ -1215,23 +1225,19 @@ button#buy-window-close {
     width: 30%;
   }
 }
-/* Barra de Rolagem */
-/* Fundo que corre */
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
-/* Fundo que corre */
 ::-webkit-scrollbar {
-  width: 10px;
-  background: #f4f4f4;
+  width: 4px;
+  background: #f4f4f400;
 }
-/* Linha que desce */
 ::-webkit-scrollbar-thumb {
-  background: #00c65a;
-  border-radius: 15px;
+  background: rgba(75, 0, 130);
+  border-radius: 60px;
 }
-/* Linha que desce*/
-/* Barra de Rolagem */
+
 :root {
   --modal-duration: 1s;
   --modal-color: #428bca;
@@ -1299,4 +1305,50 @@ button#buy-window-close {
 }
 .stock1 {
   font-size: 20px;
+}
+
+.conexao {
+  display: none;
+}
+
+.hypixel {
+  display: none;
+}
+
+.streaming {
+  display: none;
+}
+
+.discord {
+  display: none;
+}
+
+.minecraft {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.container-btnn {
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* proporção 16:9 para manter a qualidade */
+  overflow: hidden;
+}
+
+.gif-wrapper {
+  height: auto;
+  border-radius: 10px;
+}
+.gif {
+  border-radius: 20px;
+  width: 50%;
 }

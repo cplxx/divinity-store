@@ -5,24 +5,24 @@
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <script src="cdn-cgi/apps/head/mgGu57YIqUC2DRyfSCs1Eb6LCzs.js"></script>
-   <link href="assets/images/logo.webp" rel="icon" />
+   <link href="assets/images/ico.png" rel="icon" />
    <meta name="keywords"
-      content="Divinity, minecraft, comprar minecraft,minecraft barato, minecraft original, loja de minecraft, loja de minecraft original, DivinityStore, Divinity Store, Divinitystore, Divinity store, Divinity store, Divinity Store" />
-   <meta name="description"
-      content="Compre agora seu minecraft na Divinity Store . Com os preços mais baixos do MERCADO!!!" />
+      content=" minecraft, comprar minecraft, minecraft barato, minecraft original, loja de minecraft, loja de minecraft original" />
+   <meta name="description" content="" />
    <link rel="stylesheet" href="src/components/css/all.css">
-   <link rel="icon" href="src/components/imgs/favicon.png">
+   <link rel="icon" href="assets/images/ico.png">
    <link rel="stylesheet" href="src/components/css/bootstrap.min.css">
    <link rel="stylesheet" href="src/components/css/style.css">
    <link rel="stylesheet" href="src/components/css/terms-and-conditions.css">
-   <title>Divinity Store - A maior e melhor loja de Minecraft</title>
+   <script src="/src/components/js/shop.js defer"></script>
+   <title>Wolf Loja - A maior loja de minecraft, barato e confiável.</title>
 
 </head>
 
 <body>
    <script src="src/components/js/script.js"></script>
    <button id="hamburger-menu">
-      <img src="src/components/imgs/hamburger-menu.svg">
+      <img src="./src/components/imgs/produtos/hamburger-menu.svg" alt="">
    </button>
    <nav id="menu" class="rm-navbar navbar-expand-lg">
       <div class="container">
@@ -32,30 +32,38 @@
          <div id="rm-navbar">
             <ul class="navbar-nav ml-auto">
                <li class="nav-item">
-                  <a href="#" class="rm-items nav-link">Início</a>
+                  <a href="#produtos" class="rm-items nav-link">PRODUTOS</a>
                </li>
                <li class="nav-item">
                   <a href="#faqs" class="rm-items nav-link">Perguntas frequentes</a>
                </li>
-               <li class="nav-item">
-                  <a href="https://discord.gg/xZzv8ayR7U" class="rm-items nav-link">⭐ Minecraft Grátis</a>
+               <!-- <li class="nav-item">
+                  <a href="https://discord.gg/2xz8sd2zUe" class="rm-items nav-link">
+               <li><i class="fas fa-mail"></i></li></a>
+               </li> -->
+               <!-- <li class="nav-item">
+                  <a href="" class="rm-items nav-link"></a>
                </li>
-               <li class="nav-item centralDoProduto"></li>
+               <li class="nav-item">
+                  <a href="" class="rm-items nav-link"></a>
+               </li>
+               <li class="nav-item centralDoProduto"></li> -->
             </ul>
          </div>
       </div>
    </nav>
    <main class="rm-header">
       <div class="main_txt">
-         <h2 style="text-transform: uppercase; font-weight: 700;">Bem vindo a nossa loja!</h2>
-         <p>Nossos serviços baratos e de alta qualidade são vendidos a você a preços muito razoáveis. Se você tem um
-            produto que deseja adicionar ou tem uma pergunta, comece a falar ao vivo sem hesitar.</p>
-         <br>
-         <span class="btnComprar" onClick='location.href=`#produtos`'><i class="fas fa-shopping-cart"></i>
-            Comprar</span>
+         <h2 style="text-transform: uppercase; font-weight: 700;">Produtos ótimos com os menores preços é só na Wolf
+            Loja.</h2>
+
+         <span class="btn green-btn product-card-buy custom-btn" onClick='location.href=`#produtos`'><i
+               class="fas fa-eye"></i>
+            Conferir produtos
+         </span>
       </div>
       <div class="main_img">
-         <img src="src/components/imgs/produtos/teste.png" alt="" height="95%">
+         <!-- <img src="src/components/imgs/produtos/teste.png" alt="" height="95%"> -->
       </div>
    </main>
 
@@ -67,24 +75,24 @@
                <div class="rm-cards card-body">
                   <i class="rm-icon fas fa-rocket"></i>
                   <h5 class="card-title">Entrega</h5>
-                  <p class="rm-text">Nós fornecemos um prazo de 48 horas para envio do produto após a aprovação do
-                     pagamento.</p>
+                  <p class="rm-text">Nós entregamos seu produto dentro do prazo de 48 horas após a aprovação do
+                     pagamento</p>
                </div>
             </div>
             <div class="col-lg-4">
                <div class="rm-cards card-body">
                   <i class="rm-icon fas fa-headset"></i>
                   <h5 class="card-title">Suporte</h5>
-                  <p class="rm-text">Nós da equipe Divinity Store oferecemos um suporte de 24/7 para sanar qualquer
-                     problema ou duvida.</p>
+                  <p class="rm-text">A equipe de suporte da Wolf Loja está disponível 24 horas por dia, de segunda a
+                     sexta-feira</p>
                </div>
             </div>
             <div class="col-lg-4">
                <div class="rm-cards card-body">
                   <i class="rm-icon fas fa-user-shield"></i>
                   <h5 class="card-title">Segurança</h5>
-                  <p class="rm-text">Comprar minecraft original barato agora está fácil, com a Divinity Store, que da
-                     total segurança na hora da compra.</p>
+                  <p class="rm-text">Somos a loja mais segura! Estamos a anos no mercado com diversas avaliações
+                     positivas</p>
                </div>
             </div>
          </div>
@@ -94,77 +102,61 @@
    <!-- PRODUTOS -->
    <section class="rm-produtos" id="" style="margin-top: 100px; min-height: 100vh;">
       <h4 class="text-center section-title">PRODUTOS</h4>
-      <p class="text-center section-subtitle">Adquira os nossos produtos com os menores preços do mercado!!!</p>
+      <p class="text-center section-subtitle">Confira os nossos produtos com a melhor qualidade pelo menor preço!!</p>
+      <div class="container-btnn">
+         <button class="minecraft-btn btn">Minecraft</button>
+         <button class="hypixel-btn btn">Hypixel</button>
+         <button class="conexao-btn btn">Conexão</button>
+         <button class="streaming-btn btn">Streaming</button>
+         <button class="discord-btn btn">Discord</button>
+      </div>
       <div class="container">
          <div class="row" id="produtos">
-            <div class="col-md-4" data-product-id="0">
+            <div class="col-md-4 minecraft" data-product-id="0">
                <div class="rm-card">
                   <img src="src/components/imgs/produtos/SFA (2).png" alt="">
-                  <h3>Minecraft Original SemiFull</h3>
+                  <h3>MINECRAFT SEMI FULL ACESSO</h3>
                   <div>
                      <span class="mb-3">por apenas</span>
-                     <h4 class="mb-0">R$8.00<span class="plan-type"></span></h4>
+                     <h4 class="mb-0">R$15,90<span class="plan-type"></span></h4>
                   </div>
                   <ul>
+                     <li><i class="fas fa-check"></i>Minecraft Java Edition</li>
                      <li><i class="fas fa-check"></i>Nenhum banimento em servidores</li>
-                     <li><i class="fas fa-check"></i>Pode Alterar a skin</li>
-                     <li><i class="fas fa-check"></i>Pode alterar nick</li>
-                     <li><i class="fas fa-check"></i>Alterar senha</li>
-                     <li><i class="fas fa-check"></i>Acesso a todos os servidores</li>
-                     <li><i class="fas fa-check"></i>Conta temporária</li>
-                     <li><i class="fas fa-check"></i>Pode conter capa ou vip em algum servidor</li>
+                     <li><i class="fas fa-check"></i>Acessa todos servidores originais</li>
+                     <li><i class="fas fa-check"></i>Altera skin, nick, e-mail e senha</li>
+                     <li><i class="fas fa-check"></i>Chance de ter Rank em servidores (VIP, VIP+, MVP, MVP+)</li>
+                     <li><i class="fas fa-check"></i>Apenas sua (Privada)</li>
+                     <li><i class="fas fa-info" style="color: rgb(255, 195, 106);"></i>Duração de até 2 meses</li>
                   </ul>
-                  <a href="https://mpago.la/1MdtFq7"><button class="btn green-btn product-card-buy"><i
-                           class="fas fa-shopping-basket"></i>Comprar</button></a>
+                  <a href="https://mpago.la/1WbLrj5"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar - R$15,90</button></a>
                   <div>
                   </div>
                </div>
             </div>
-            <div class="col-md-4" data-product-id="1">
-               <div class="rm-card">
+            <div class="col-md-4 minecraft" data-product-id="1">
+               <div class="rm-card minecraft">
                   <img src="src/components/imgs/produtos/FA.png" alt="">
-                  <h3>Minecraft Original Full Acesso</h3>
+                  <h3>MINECRAFT FULL ACESSO</h3>
                   <div>
                      <span class="mb-3">por apenas</span>
-                     <h4 class="mb-0">R$45.00<span class="plan-type"></span></h4>
+                     <h4 class="mb-0">R$45,90<span class="plan-type"></span></h4>
                   </div>
                   <ul>
-                     <li><i class="fas fa-check"></i>Somente você tem acesso</li>
-                     <li><i class="fas fa-check"></i>Acesso a todos os servidores</li>
-                     <li><i class="fas fa-check"></i>Acesso a mudança de skin</li>
-                     <li><i class="fas fa-check"></i>Acesso a mudança de nome</li>
-                     <li><i class="fas fa-check"></i>Acesso para alterar a senha</li>
-                     <li><i class="fas fa-check"></i> Contém TID | ID de Transação</li>
-                     <li><i class="fas fa-check"></i>Nenhuma pergunta de segurança</li>
-                     <li><i class="fas fa-check"></i>Conta já na microsoft</li>
+                     <li><i class="fas fa-check"></i>Minecraft Java Edition</li>
+                     <li><i class="fas fa-check"></i>Nenhum banimento em servidores</li>
+                     <li><i class="fas fa-check"></i>Acessa todos servidores originais</li>
+                     <li><i class="fas fa-check"></i>Altera skin, nick, e-mail e senha</li>
+                     <li><i class="fas fa-check"></i>Apenas sua (Privada)</li>
+                     <li><i class="fas fa-check"></i>Acesso vitalício</li>
+                     <li><i class="fas fa-check"></i>Chance de ter Cosméticos no<br />Lunar Client, Badlion Client<br />
+                        e/ou LabyMod</li>
+                     <li><i class="fas fa-check"></i>Chance de ter Capa da<br />OptiFine, Migração, Lunar Client<br />
+                        e/ou LabyMod</li>
                   </ul>
-                  <a href="https://mpago.la/1cun4N4"><button class="btn green-btn product-card-buy"><i
-                           class="fas fa-shopping-basket"></i>Comprar</button></a>
-                  <div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4" data-product-id="2">
-               <div class="rm-card">
-                  <img src="src/components/imgs/produtos/CapaDaOf.png" alt="">
-                  <h3>Capa OptiFine</h3>
-                  <div>
-                     <span class="mb-3">por apenas</span>
-                     <h4 class="mb-0">R$10.00<span class="plan-type"></span></h4>
-                  </div>
-                  <ul>
-                     <li><i class="fas fa-check"></i>Ativação no seu nick</li>
-                     <li><i class="fas fa-check"></i>Entregamos na hora</li>
-                     <li><i class="fas fa-check"></i>Você personaliza a capa</li>
-                     <li><i class="fas fa-check"></i>Diversos estilos de capas</li>
-                     <li><i class="fas fa-check"></i>Visível para todos com OptiFine</li>
-                     <li><i class="fas fa-check"></i>Segurança e garantia de 24 horas</li>
-                     <li><i class="fas fa-check"></i>Acesso ao painel oficial da OptiFine</li>
-                     <li><i class="fas fa-check"></i>Acesso ao Donate da capa</li>
-                     <li><i class="fas fa-check"></i>Consegue Alterar o Nick</li>
-                  </ul>
-                  <a href="https://mpago.la/1GHBj1x"><button class="btn green-btn product-card-buy"><i
-                           class="fas fa-shopping-basket"></i>Comprar</button></a>
+                  <a href="https://mpago.la/2UA1A85"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar - R$45,90</button></a>
                   <div>
                   </div>
                </div>
@@ -172,34 +164,297 @@
             <div class="modal">
                <div onclick="fechar()" class="fechar"></div>
             </div>
-            <div class="col-md-4" data-product-id="3">
+            <div class="col-md-4 minecraft" data-product-id="3">
                <div class="rm-card">
-                  <img src="src/components/imgs/produtos/capa+fa(2).png" alt="">
-                  <h3>FULL ACESSO + CAPA DA OPTIFINE [PROMOÇÃO]</h3>
+                  <img src="src/components/imgs/produtos/migdf.png" alt="">
+                  <h3>MINECRAFT FULL ACESSO + CAPA DA MIGRAÇÃO [PROMOÇÃO]</h3>
                   <div>
                      <span class="mb-3">por apenas</span>
-                     <h4 class="mb-0">R$55.00<span class="plan-type"></span></h4>
+                     <h4 class="mb-0">R$58,90<span class="plan-type"></span></h4>
                   </div>
                   <ul>
-                     <li><i class="fas fa-check"></i>Acesso total a conta</li>
-                     <li><i class="fas fa-check"></i>Pode Alterar o email</li>
-                     <li><i class="fas fa-check"></i>Pode Alterar o nick</li>
-                     <li><i class="fas fa-check"></i>Pode Alterar a skin</li>
-                     <li><i class="fas fa-check"></i>Pode Alterar a senha</li>
-                     <li><i class="fas fa-check"></i>Sem Banimentos</li>
-                     <li><i class="fas fa-check"></i>Chances de vir VIP no hypixel</li>
-                     <li><i class="fas fa-check"></i>Nenhuma pergunta de segurança</li>
+                     <li><i class="fas fa-check"></i>Minecraft Java Edition</li>
+                     <li><i class="fas fa-check"></i>Chance de ter Rank em servidores (VIP, VIP+, MVP, MVP+)</li>
+                     <li><i class="fas fa-check"></i>Nenhum banimento em servidores</li>
+                     <li><i class="fas fa-check"></i>Acessa todos servidores originais</li>
+                     <li><i class="fas fa-check"></i>Altera skin, nick, e-mail e senha</li>
+                     <li><i class="fas fa-check"></i>Apenas sua (Privada)</li>
+                     <li><i class="fas fa-check"></i><strong>Capa da migração</strong></li>
+                     <li><i class="fas fa-check"></i>Acesso vitalício</li>
                   </ul>
-                  <a href="https://mpago.la/178dfum"><button class="btn green-btn product-card-buy"><i
-                           class="fas fa-shopping-basket"></i>Comprar</button></a>
+                  <a href="https://mpago.la/1Rhndzg"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar - R$58,90</button></a>
                   <div>
                   </div>
 
 
                </div>
             </div>
+            <div class="col-md-4 conexao" data-product-id="5">
+               <div class="rm-card">
+                  <img src="src/components/imgs/pvpgif.gif" alt="GIF" class="gif">
+                  <h3>Wolf Tweaker - Mensal</h3>
+                  <div>
+                     <span class="mb-3">por apenas</span>
+                     <h4 class="mb-0">R$14,90<span class="plan-type"></span></h4>
+                  </div>
+                  <ul>
+                     <li><i class="fas fa-check"></i>Direciona sua internet para os jogos</li>
+                     <li><i class="fas fa-check"></i>Diminui o atraso entre os comandos do jogador e a resposta no jogo
+                     </li>
+                     <li><i class="fas fa-check"></i>Aumenta o desempenho do jogo ao pré-carregar mais quadros</li>
+                     <li><i class="fas fa-check"></i>Permite que os jogos utilizem o poder total da placa de vídeo</li>
+                     <li><i class="fas fa-check"></i>Permite uma resposta mais rápida e precisa dos movimentos</li>
+                     <li><i class="fas fa-check"></i>Desativa recursos do sistema que prejudicam o desempenho</li>
+                     <li><i class="fas fa-check"></i>Desbloqueia o desempenho máximo da rede</li>
+                     <li><i class="fas fa-check"></i>Melhora a comunicação com o servidor</li>
+                     <li><i class="fas fa-check"></i>Garante o desempenho máximo do processador</li>
+                     <li><i class="fas fa-check"></i>Reduz o tempo de espera melhorando a latência</li>
+                     <li><i class="fas fa-check"></i>Melhora a eficiência da transmissão de pacotes</li>
+                     <li><i class="fas fa-check"></i>Prioriza os recursos do sistema para os jogos</li>
+                     <li><i class="fas fa-check"></i>Remove o limite de banda do Windows</li>
+                     <li><i class="fas fa-check"></i>Diminui o atraso no envio de pacotes</li>
+                     <li><i class="fas fa-check"></i>Direciona sua internet para os jogos</li>
+                     <li><i class="fas fa-check"></i>Estabiliza o desempenho da rede</li>
+                     <li><i class="fas fa-check"></i>Melhora a eficiência da rede</li>
+                     <li><i class="fas fa-check"></i>Diminui a perda de pacotes</li>
+                  </ul>
+                  <a href="https://mpago.la/17CBAA7"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar - R$14,90</button></a>
+                  <div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4 conexao" data-product-id="6">
+               <div class="rm-card">
+                  <div class="gif-wrapper">
+                     <img src="./src/components/imgs/neythz-potpvp.gif" alt="GIF" class="gif">
+                  </div>
+                  <h3>Regedit [PROMOÇÃO]</h3>
+                  <div>
+                     <span class="mb-3">por apenas</span>
+                     <h4 class="mb-0">R$7,90<span class="plan-type"></span></h4>
+                  </div>
+                  <ul>
+                     <li><i class="fas fa-check"></i>Direciona sua internet para os jogos</li>
+                     <li><i class="fas fa-check"></i>Desbloqueia o desempenho máximo da rede</li>
+                     <li><i class="fas fa-check"></i>Melhora a comunicação com o servidor</li>
+                     <li><i class="fas fa-check"></i>Reduz o tempo de espera melhorando a latência</li>
+                     <li><i class="fas fa-check"></i>Melhora a eficiência da transmissão de pacotes</li>
+                     <li><i class="fas fa-check"></i>Remove o limite de banda do Windows</li>
+                     <li><i class="fas fa-check"></i>Diminui o atraso no envio de pacotes</li>
+                     <li><i class="fas fa-check"></i>Direciona sua internet para os jogos</li>
+                     <li><i class="fas fa-check"></i>Estabiliza o desempenho da rede</li>
+                     <li><i class="fas fa-check"></i>Melhora a eficiência da rede</li>
+                     <li><i class="fas fa-check"></i>Diminui a perda de pacotes</li>
+                  </ul>
+                  <a href="
+                  https://mpago.la/2ingZcW"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar</button></a>
+               </div>
+            </div>
+
+            <div class="col-md-4 hypixel" data-product-id="">
+               <div class="rm-card">
+                  <img src="src/components/imgs/produtos/hypixelban.png" alt="">
+                  <h3>MINECRAFT FULL ACESSO + BAN NO HYPIXEL</h3>
+                  <div>
+                     <span class="mb-3">por apenas</span>
+                     <h4 class="mb-0">R$36,90<span class="plan-type"></span></h4>
+                  </div>
+                  <ul>
+                     <li><i class="fas fa-check"></i>Minecraft Java Edition</li>
+                     <li><i class="fas fa-check"></i>Altera skin, nick, e-mail e senha</li>
+                     <li><i class="fas fa-check"></i>Chance de ter Rank em servidores (VIP, VIP+, MVP, MVP+)</li>
+                     <li><i class="fas fa-check"></i>Chance de ter Cosméticos no Lunar Client, Badlion Client<br /> e/ou
+                        LabyMod</li>
+                     <li><i class="fas fa-check"></i>Chance de ter Capa da OptiFine, Migração, Lunar Client<br /> e/ou
+                        LabyMod</li>
+                     <li><i class="fas fa-check"></i>Acessa todos servidores originais (Exceto o Hypixel)</li>
+                     <li><i class="fas fa-check"></i>Nenhum banimento em servidores (Apenas no Hypixel)</li>
+                     <li><i class="fas fa-check"></i>Apenas sua (Privada)</li>
+                     <li><i class="fas fa-check"></i>Acesso vitalício</li>
+                  </ul>
+                  <a href="https://mpago.la/2u9oVqg"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar - R$36,90</button></a>
+                  <div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 hypixel" data-product-id="7">
+               <div class="rm-card">
+                  <img src="src/components/imgs/produtos/hypixelban5.png" alt="">
+                  <h3>MINECRAFT FULL ACESSO + CAPA DA MIGRAÇÃO + BAN NO HYPIXEL</h3>
+                  <div>
+                     <span class="mb-3">por apenas</span>
+                     <h4 class="mb-0">R$42,90<span class="plan-type"></span></h4>
+                  </div>
+                  <ul>
+                     <li><i class="fas fa-check"></i>Minecraft Java Edition</li>
+                     <li><i class="fas fa-check"></i>Altera skin, nick, e-mail e senha</li>
+                     <li><i class="fas fa-check"></i>Chance de ter Rank em servidores (VIP, VIP+, MVP, MVP+)</li>
+                     <li><i class="fas fa-check"></i>Chance de ter Cosméticos no Lunar Client, Badlion Client e/ou
+                        LabyMod</li>
+                     <li><i class="fas fa-check"></i>Chance de ter Capa da OptiFine, Lunar Client e/ou LabyMod</li>
+                     <li><i class="fas fa-check"></i>Acessa todos servidores originais (Exceto o Hypixel)</li>
+                     <li><i class="fas fa-check"></i>Nenhum banimento em servidores (Apenas no Hypixel)</li>
+                     <li><i class="fas fa-check"></i>Apenas sua (Privada)</li>
+                     <li><i class="fas fa-check"></i><strong>Capa da migração</strong></li>
+                     <li><i class="fas fa-check"></i>Acesso vitalício</li>
+                  </ul>
+                  <a href="https://mpago.la/2yQYqK5"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar - R$42,90</button></a>
+                  <div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 hypixel" data-product-id="7">
+               <div class="rm-card">
+                  <img src="src/components/imgs/produtos/vip+.png" alt="">
+                  <h3>MINECRAFT FULL ACESSO + VIP+ NO HYPIXEL</h3>
+                  <div>
+                     <span class="mb-3">por apenas</span>
+                     <h4 class="mb-0">R$60,90<span class="plan-type"></span></h4>
+                  </div>
+                  <ul>
+                     <li><i class="fas fa-check"></i>Minecraft Java Edition</li>
+                     <li><i class="fas fa-check"></i>Altera skin, nick, e-mail e senha</li>
+                     <li><i class="fas fa-check"></i>Chance de ter Cosméticos no Lunar Client, Badlion Client e/ou
+                        LabyMod</li>
+                     <li><i class="fas fa-check"></i>Chance de ter Capa da OptiFine, Lunar Client e/ou LabyMod</li>
+                     <li><i class="fas fa-check"></i>Acessa todos servidores originais (Exceto o Hypixel)</li>
+                     <li><i class="fas fa-check"></i>Nenhum banimento em servidores (Apenas no Hypixel)</li>
+                     <li><i class="fas fa-check"></i><strong> VIP+ no Hypixel</strong></li>
+                     <li><i class="fas fa-check"></i>Apenas sua (Privada)</li>
+                     <li><i class="fas fa-check"></i>Acesso vitalício</li>
+                  </ul>
+                  <a href="https://mpago.la/28rCWda"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar - R$60,90</button></a>
+                  <div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 streaming" data-product-id="7">
+               <div class="rm-card">
+                  <img src="src/components/imgs/produtos/spotif.png" alt="">
+                  <h3>SPOTIFY PREMIUM - PLANO <br />FAMILIA</h3>
+                  <div>
+                     <span class="mb-3">por apenas</span>
+                     <h4 class="mb-0">R$34,90<span class="plan-type"></span></h4>
+                  </div>
+                  <ul>
+                     <li><i class="fas fa-check"></i>Plano Familia - Administrador</li>
+                     <li><i class="fas fa-check"></i><strong>Duração de 12 meses</strong></li>
+                     <li><i class="fas fa-check"></i>Altera e-mail e senha</li>
+                     <li><i class="fas fa-check"></i>Apenas sua (Privada)</li>
+                  </ul>
+                  <a href="https://mpago.la/1JsznQr"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar - R$34,90</button></a>
+                  <div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 streaming" data-product-id="7">
+               <div class="rm-card">
+                  <img src="src/components/imgs/produtos/netfrix.png" alt="">
+                  <h3>NETFLIX PREMIUM 4K+HDR</h3>
+                  <div>
+                     <span class="mb-3">por apenas</span>
+                     <h4 class="mb-0">R$24,90<span class="plan-type"></span></h4>
+                  </div>
+                  <ul>
+                     <li><i class="fas fa-check"></i>Plano Premium</li>
+                     <li><i class="fas fa-check"></i><strong>duração de 30 dias</strong></li>
+                     <li><i class="fas fa-check"></i>Altera e-mail e senha</li>
+                     <li><i class="fas fa-check"></i>Apenas sua (Privada)</li>
+                  </ul>
+                  <a href="https://mpago.la/26yraaW"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar - R$24,90</button></a>
+                  <div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 streaming" data-product-id="8">
+               <div class="rm-card">
+                  <img src="src/components/imgs/produtos/HBO_Max.png" alt="">
+                  <h3>HBO MAX MULTI-TELAS</h3>
+                  <div>
+                     <span class="mb-3">por apenas</span>
+                     <h4 class="mb-0">R$34,90<span class="plan-type"></span></h4>
+                  </div>
+                  <ul>
+                     <li><i class="fas fa-check"></i>Plano Multitelas</li>
+                     <li><i class="fas fa-check"></i><strong>duração de 12 meses</strong></li>
+                     <li><i class="fas fa-check"></i>Alta definição e tecnologia 4k</li>
+                     <li><i class="fas fa-check"></i>3 telas ao mesmo tempo</li>
+                     <li><i class="fas fa-check"></i>Todos os dispositivos</li>
+                     <li><i class="fas fa-check"></i>Altera e-mail e senha</li>
+                     <li><i class="fas fa-check"></i>Apenas sua (Privada)</li>
+
+                  </ul>
+                  <a href="LINK DE PAGAMENTO AQUI!!!!"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar - R$34,90</button></a>
+                  <div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 streaming" data-product-id="8">
+               <div class="rm-card">
+                  <img src="src/components/imgs/produtos/og-image.png" alt="">
+                  <h3>CRUNCHYROLL MEGA FÃ</h3>
+                  <div>
+                     <span class="mb-3">[PROMOÇÃO]</span>
+                     <h4 class="mb-0">R$29,90<span class="plan-type"></span></h4>
+                  </div>
+                  <ul>
+                     <li><i class="fas fa-check"></i>Plano Multitelas</li>
+                     <li><i class="fas fa-check"></i><strong>duração de 12 meses</strong></li>
+                     <li><i class="fas fa-check"></i>Novos episódios logo após a exibição no Japão</li>
+                     <li><i class="fas fa-check"></i>Pode assistir offline</li>
+                     <li><i class="fas fa-check"></i>4 telas ao mesmo tempo</li>
+                     <li><i class="fas fa-check"></i>Todos os dispositivos</li>
+                     <li><i class="fas fa-check"></i>Altera e-mail e senha</li>
+                     <li><i class="fas fa-check"></i>Apenas sua (Privada)</li>
+
+                  </ul>
+                  <a href="LINK DE PAGAMENTO AQUI!!!!"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar - R$29,90</button></a>
+                  <div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 discord" data-product-id="8">
+               <div class="rm-card">
+                  <img src="src/components/imgs/produtos/disc3meses.png" alt="">
+                  <h3>DISCORD NITRO GAMING</h3>
+                  <div>
+                     <span class="mb-3">[PROMOÇÃO]</span>
+                     <h4 class="mb-0">R$29,90<span class="plan-type"></span></h4>
+                  </div>
+                  <ul>
+                     <li><i class="fas fa-check"></i><strong>duração de 3 meses</strong></li>
+                     <li><i class="fas fa-check"></i>Válido somente para contas que nunca tiveram nitro.</li>
+
+                  </ul>
+                  <a href="LINK DE PAGAMENTO AQUI!!!!"><button class="btn green-btn product-card-buy"><i
+                           class="fas fa-shopping-basket"></i>Comprar - R$29,90</button></a>
+                  <div>
+                  </div>
+               </div>
+            </div>
+
          </div>
       </div>
+      </div>
+      </div>
+
    </section>
 
    <!-- FAQ -->
@@ -207,9 +462,8 @@
       <section class="faqs">
          <div class="container">
             <h4 class="text-center section-title">PERGUNTAS</h4>
-            <p class="text-center section-subtitle">Ficou alguma dúvida ainda sobre quaisquer procedimentos?</p>
-            <p class="text-center section-subtitle">Separamos abaixo as perguntas que mais nos fazem para que possamos
-               te ajudar.</p>
+            <p class="text-center section-subtitle">Para agilizar o suporte, organizamos as perguntas mais comuns
+               abaixo.</p>
             <section class="faq-section" id="faqs" style="display: flex; align-items: center; justify-content: center;">
                <div class="row" style="width: 80%;">
                   <div class="col-lg-10 offset-lg-1 col-12">
@@ -251,8 +505,8 @@
                         </div>
                         <div class="row">
                            <div class="col-12 faq-resposta text-justify" style="display: none;">
-                              <p>A Entrega é Realizada via Email.
-                                 <br />
+                              <p>
+                                 Enviamos para o e-mail que você utilizou no mercado pago.
                               </p>
                            </div>
                         </div>
@@ -260,7 +514,8 @@
                      <div class="faq-pergunta" data-status="fechado">
                         <div class="row faq-titulo">
                            <div class="col-11">
-                              <h4>Comprei o jogo e ainda não chegou?</h4>
+                              <h4>Qual é o prazo de entrega?
+                              </h4>
                            </div>
                            <div class="col-1 text-right">
                               <defs>
@@ -295,8 +550,7 @@
                         </div>
                         <div class="row">
                            <div class="col-12 faq-resposta text-justify" style="display: none;">
-                              <p>Entre Em Contato Conosco No Nosso Discord, para resgatar o produto.
-                                 <br />
+                              <p>Temos o prazo de até 48 horas para concluir a entrega após o pagamento.
                               </p>
                            </div>
                         </div>
@@ -304,7 +558,7 @@
                      <div class="faq-pergunta" data-status="fechado">
                         <div class="row faq-titulo">
                            <div class="col-11">
-                              <h4>Tem como comprar por pix?</h4>
+                              <h4>Quais são as formas de pagamentos?</h4>
                            </div>
                            <div class="col-1 text-right">
                               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -329,7 +583,7 @@
                         </div>
                         <div class="row">
                            <div class="col-12 faq-resposta text-justify" style="display: none;">
-                              <p>Sim, no momento só aceitamos pix.
+                              <p>Aceitamos PIX como forma de pagamento, assim a compra é 100% segura.
                                  <br />
                               </p>
                            </div>
@@ -342,7 +596,7 @@
                      <div class="faq-pergunta" data-status="fechado">
                         <div class="row faq-titulo">
                            <div class="col-11">
-                              <h4>Minha conta parou de pegar?</h4>
+                              <h4>É confiável?</h4>
                            </div>
                            <div class="col-1 text-right">
                               <defs>
@@ -377,8 +631,8 @@
                         </div>
                         <div class="row">
                            <div class="col-12 faq-resposta text-justify" style="display: none;">
-                              <p>Caso sua conta, sem motivos, pare de pegar contate nosso suporte informando o problema,
-                                 iremos avaliar.
+                              <p>Sim, a nossa loja é confiável, estamos há anos no mercado e temos diversas avaliações
+                                 positivas.
                                  <br />
                               </p>
                            </div>
@@ -387,7 +641,8 @@
                      <div class="faq-pergunta" data-status="fechado">
                         <div class="row faq-titulo">
                            <div class="col-11">
-                              <h4>Perdeu os dados da conta? o que fazer?</h4>
+                              <h4>Posso jogar em quais aparelhos?
+                              </h4>
                            </div>
                            <div class="col-1 text-right">
                               <defs>
@@ -422,7 +677,7 @@
                         </div>
                         <div class="row">
                            <div class="col-12 faq-resposta text-justify" style="display: none;">
-                              <p>Nós não nos responsabilizamos por perdas de senhas ou dados em gerais.
+                              <p>Você pode jogar em computadores, PC & MAC.
                                  <br />
                               </p>
                            </div>
@@ -431,7 +686,7 @@
                      <div class="faq-pergunta" data-status="fechado">
                         <div class="row faq-titulo">
                            <div class="col-11">
-                              <h4>A loja é confiavél?</h4>
+                              <h4>Como contatar o suporte?</h4>
                            </div>
                            <div class="col-1 text-right">
                               <defs>
@@ -466,7 +721,8 @@
                         </div>
                         <div class="row">
                            <div class="col-12 faq-resposta text-justify" style="display: none;">
-                              <p>Sim, veja você mesmo em nosso discord.
+                              <p>Você pode contatar o suporte através do nosso discord, para isso clique no botão que
+                                 está abaixo da página.
                                  <br />
                               </p>
                            </div>
@@ -484,12 +740,12 @@
                <div class="row text-center d-flex justify-content-center pt-5">
                   <div class="col-md-2">
                      <h6 class="text-uppercase font-weight-bold" class="text-center">
-                        <a href="#faqs" class="text-white">Perguntas frequentes</a>
+                        <a href="#produtos" class="text-white">PRODUTOS</a>
                      </h6>
                   </div>
                   <div class="col-md-2">
                      <h6 class="text-uppercase font-weight-bold" class="text-center">
-                        <a href="https://discord.gg/xZzv8ayR7U" class="text-white">Contato</a>
+                        <a href="https://discord.gg/7bYT5sNTG4" class="text-white">DISCORD</a>
                      </h6>
                   </div>
             </section>
@@ -503,7 +759,7 @@
             </section>
          </div>
          <div class="text-center p-3" style="background-color: #2b2b2b">
-            Copyright © 2021 DivinityStore
+            <a href="https://discord.gg/hEvp7fKAy8">VISURA CODE © 2023</a>
          </div>
       </footer>
 
